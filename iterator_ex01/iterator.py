@@ -15,4 +15,6 @@ class MyIter:
             self.add += 2
             return self.n
         else:
+            self.n = 0
+            self.add = 1
             raise StopIteration

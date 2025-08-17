@@ -14,8 +14,11 @@ for element in my_iter:
     print(element, end=' ')
 
 
-my_iter = MyIter(100)
+print("\nIterating over iterator once again.")
+for element in my_iter:
+    print(element, end=' ')
+
 my_iter_as_list = list(my_iter)
 
-print()
+print("\nConverted iterator into a list.")
 print(my_iter_as_list)
