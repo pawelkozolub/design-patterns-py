@@ -25,3 +25,12 @@ Consequences of use:
 - Results are not stored anywhere, thus saving memory.
 - We can return any number of results from all (even infinite number).
 - To go through the elements, we can use a `for` loop.
+
+### Template method
+
+**Template method** is a behavioral design pattern describing the general scheme of an algorithm’s operation, but requiring further specification in subclasses. It is similar to an inheritance concept with a general base class and specific derived classes.
+
+Consequences of use:
+- Creation of an abstract superclass.
+- Having a method that runs all the methods of the algorithm.
+- Avoidance of code duplication.
