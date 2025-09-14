@@ -45,3 +45,14 @@ Consequences of use:
 - Delegates the process of saving and loading to an external object.
 
 In Python, there is a `pickle` library used for saving entire objects.
+
+### Chain of responsibility
+
+**Chain of Responsibility** is a behavioral design pattern used to pass a request sequentially among potential objects capable of processing the request until it encounters the correct one.
+
+Consequences of use:
+- Ignoring or delegating tasks further.
+- Chain links can be added/removed/modified dynamically.
+- The task will be performed by the first object capable of handling it.
+- There may be unhandled tasks (if there is no default `handler`).
+- Each element in the chain knows at most two neighboring elements.
