@@ -56,3 +56,13 @@ Consequences of use:
 - The task will be performed by the first object capable of handling it.
 - There may be unhandled tasks (if there is no default `handler`).
 - Each element in the chain knows at most two neighboring elements.
+
+### Command
+
+**Command** is a behavioral design pattern that adds a layer of abstraction between a certain action and the object triggering that action.
+
+Consequences of use:
+- The command is not executed immediately. It will be executed on demand.
+- The activity is separated from the object on which it is performed.
+- The triggering object does not know how the final object works.
+- All commands can be executed one after another or simultaneously (in parallel).
