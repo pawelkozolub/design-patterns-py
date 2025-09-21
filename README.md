@@ -79,3 +79,14 @@ Consequences of use:
 - The list of observing objects can be appropriately sorted.
 - The observed sends notifications to all observers.
 - Observers do not know about each other.
+
+### 8. State
+
+**State** is a behavioral design pattern in which an object adjusts its behavior as its current state changes.
+
+Consequences of use:
+- Manual selection of the algorithm based on the device's state.
+- Eliminates conditional statements.
+- A separate class is created for each state.
+- Adding a new state is very easy.
+- States do not know about each other's existence.
