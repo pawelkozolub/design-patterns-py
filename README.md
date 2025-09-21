@@ -90,3 +90,13 @@ Consequences of use:
 - A separate class is created for each state.
 - Adding a new state is very easy.
 - States do not know about each other's existence.
+
+### 9. Visitor
+
+**Visitor** is a design pattern that allows adding new functionality to existing classes/hierarchies without the need to modify them.
+
+Consequences of use:
+- Adding an additional method in the superclass – `accept_visitor` or adding it dynamically to the appropriate class/object.
+- Calling methods on an object with the implementation of the visitor.
+- Calling methods at the request (or influence) of the visitor.
+- Adapting methods depending on both the object and its arguments.
