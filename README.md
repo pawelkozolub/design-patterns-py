@@ -7,7 +7,7 @@ Examples of design patterns in Python.
 
 **Strategy** is a behavioral design pattern. It selects an appropriate algorithm for solving a problem depending on a particular case and conditions.
 
-Consequences of use:
+Features:
 - Automatic or manual algorithm selection.
 - Additional layer for an algorithm choosing.
 - Eliminates if conditions at client side.
@@ -20,7 +20,7 @@ Consequences of use:
 
 **Generator** is a special type of iterator that can be iterated only once. A generator does not store its results in memory.
 
-Consequences of use:
+Features:
 - Results are delivered on the fly.
 - Results are not stored anywhere, thus saving memory.
 - We can return any number of results from all (even infinite number).
@@ -30,7 +30,7 @@ Consequences of use:
 
 **Template method** is a behavioral design pattern describing the general scheme of an algorithm’s operation, but requiring further specification in subclasses. It is similar to an inheritance concept with a general base class and specific derived classes.
 
-Consequences of use:
+Features:
 - Creation of an abstract superclass.
 - Having a method that runs all the methods of the algorithm.
 - Avoidance of code duplication.
@@ -39,7 +39,7 @@ Consequences of use:
 
 **Memento** is a behavioral design pattern implementing the functionality of undo and redo, known from many everyday computer programs.
 
-Consequences of use:
+Features:
 - Eliminates the need to create multiple instances of the same object to store its state.
 - Heavily uses computer memory.
 - Delegates the process of saving and loading to an external object.
@@ -50,7 +50,7 @@ In Python, there is a `pickle` library used for saving entire objects.
 
 **Chain of Responsibility** is a behavioral design pattern used to pass a request sequentially among potential objects capable of processing the request until it encounters the correct one.
 
-Consequences of use:
+Features:
 - Ignoring or delegating tasks further.
 - Chain links can be added/removed/modified dynamically.
 - The task will be performed by the first object capable of handling it.
@@ -61,7 +61,7 @@ Consequences of use:
 
 **Command** is a behavioral design pattern that adds a layer of abstraction between a certain action and the object triggering that action.
 
-Consequences of use:
+Features:
 - The command is not executed immediately. It will be executed on demand.
 - The activity is separated from the object on which it is performed.
 - The triggering object does not know how the final object works.
@@ -71,7 +71,7 @@ Consequences of use:
 
 **Observer** is a behavioral design pattern that informs interested objects about the change of state of another object.
 
-Consequences of use:
+Features:
 - The observer and the observed are connected only by the fact of observation – they do not need to have a similar structure.
 - Removing an observer is not possible if it is on the list of the observed. In such a case, memory leaks may occur.
 - Changes on both sides do not affect the observation relationship in any way.
@@ -84,7 +84,7 @@ Consequences of use:
 
 **State** is a behavioral design pattern in which an object adjusts its behavior as its current state changes.
 
-Consequences of use:
+Features:
 - Manual selection of the algorithm based on the device's state.
 - Eliminates conditional statements.
 - A separate class is created for each state.
@@ -95,8 +95,18 @@ Consequences of use:
 
 **Visitor** is a design pattern that allows adding new functionality to existing classes/hierarchies without the need to modify them.
 
-Consequences of use:
+Features:
 - Adding an additional method in the superclass – `accept_visitor` or adding it dynamically to the appropriate class/object.
 - Calling methods on an object with the implementation of the visitor.
 - Calling methods at the request (or influence) of the visitor.
 - Adapting methods depending on both the object and its arguments.
+
+### 10. Lazy initialization
+
+**Lazy Initialization** is a design pattern that delays the creation of an object or the execution of other costly operations until it is necessary (until the first use).
+
+Features:
+- Results are returned only when they are needed.
+- Saves time/memory.
+- Problems may occur when two threads try to read the same (not yet created) field at the same time.
+- Often, lazy initialization is a worse idea than creating a certain object/result in the background using threads or processes.
