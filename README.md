@@ -110,3 +110,17 @@ Features:
 - Saves time/memory.
 - Problems may occur when two threads try to read the same (not yet created) field at the same time.
 - Often, lazy initialization is a worse idea than creating a certain object/result in the background using threads or processes.
+
+### 11. Model-View-Controller (MVC)
+
+**Model-View-Controller (MVC)** is an architectural design pattern. Its idea is to separate each process, each functionality into three layers: data (model), what the user sees (view), and the layer that connects the model and view and controls them (controller).
+
+Features:
+- Creation of three layers: model, view, and controller.
+- Each class performs only one task.
+- We cannot connect the view and model directly.
+- The code structure is incredibly well organized (organized does not mean easy - what we see is in a view, the view do not have any element related to model etc).
+- Each programmer can work on a different part.
+- Many views can connect to one model.
+- Supports multithreading.
+- Has a high entry threshold.
